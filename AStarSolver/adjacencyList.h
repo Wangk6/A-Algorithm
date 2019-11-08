@@ -52,6 +52,5 @@ public:
 	status addEdge(int fromX, int fromY, int toX, int toY, double weight = -1);
 	status computeAStar(int fromX, int fromY, int toX, int toY,int &length, int *list);
 
-	bool nodeDiscoveredOrProcessed(int node);
 };
 

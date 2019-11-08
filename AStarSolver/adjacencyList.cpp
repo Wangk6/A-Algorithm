@@ -31,6 +31,7 @@ farmingdale::status farmingdale::adjacencyList::addEdge(int fromNode, int toNode
 farmingdale::status farmingdale::adjacencyList::addEdge(int fromX, int fromY, int toX, int toY, double weight) {
 	int fromNode = getIndex(fromX, fromY);
 	int toNode = getIndex(toX, toY);
+	list[toNode].parent = fromNode;
 	if (0.0 > weight) {
 		weight = slDistance(fromNode, toNode);
 	}
