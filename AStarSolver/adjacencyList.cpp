@@ -90,6 +90,8 @@ farmingdale::status farmingdale::adjacencyList::getXY(int index, int &x, int &y)
 	return SUCCESS;
 }
 
+
+
 int farmingdale::adjacencyList::getIndex(int x, int y) {
 	for (int i = 0; i < size; ++i) {
 		if (list[i].xCoord == x && list[i].yCoord == y) {
@@ -98,7 +100,6 @@ int farmingdale::adjacencyList::getIndex(int x, int y) {
 	}
 	return -1;
 }
-
 
 farmingdale::status farmingdale::adjacencyList::computeAStar(int fromX, int fromY, int toX, int toY, int &length, int *list) {
 	int fromNode = getIndex(fromX, fromY);

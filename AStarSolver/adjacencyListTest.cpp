@@ -62,7 +62,6 @@ int testOne() {
 		std::cerr << "Error adding edges on line " << __LINE__ << std::endl;
 		return 1;
 	}
-
 	int length;
 	int list[GRAPH_SIZE]; // we don't know the path length, but it can never be > the number of edges
 
